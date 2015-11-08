@@ -1,0 +1,25 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Graphviz Web</title>
+    <link rel="stylesheet" href="{% static 'jquery.splitter.css' %}">
+</head>
+<body>
+
+<div id="container">
+111
+</div>
+
+<script src="{% static 'jquery-2.1.4.min.js' %}"></script>
+<script src="{% static 'jquery.splitter-0.16.0.js' %}"></script>
+<script>
+$('#container').split({
+    orientation: 'horizontal',
+    limit: 10,
+    position: '50%'
+});
+</script>
+</body>
+</html>
